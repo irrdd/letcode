@@ -45,7 +45,7 @@ function firstUniqChar1(s) {
 ;
 // 队列
 function firstUniqChar2(s) {
-    let map = new Map();
+    const map = new Map();
     let query = [];
     for (let [i, value] of Array.from(s).entries()) {
         if (!map.has(value)) {
