@@ -10,9 +10,10 @@ class SingleNode implements Link {
 
 }
 class SingleLink {
-    private $head: SingleNode //头节点
+    private $head: SingleNode | null //头节点
     constructor(data: unknown = null, next: SingleNode = null) {
-        this.$head = new SingleNode(data, next);
+        // this.$head = new SingleNode(data, next);
+        this.$head = null;
     }
     find(value: unknown): SingleNode {
         let node = this.head
