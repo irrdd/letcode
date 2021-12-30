@@ -5,23 +5,6 @@ class randomNode {
         this.random = (random === undefined ? null : random);
     }
 }
-function copyRandomList(head) {
-    if (!head || !head.next)
-        return head;
-    let tag = head;
-    let temp = new randomNode([0, null]);
-    let tag2 = temp;
-    while (tag) {
-        let tag3 = new randomNode([0, null]);
-        tag3.val = tag.val;
-        tag3.random = tag.random;
-        tag2.next = tag3;
-        tag2 = tag2.next;
-        tag = tag.next;
-    }
-    return head.next;
-}
-;
 //  使用map，空间复杂度O(n)
 function copyRandomList1(head) {
     if (!head)
