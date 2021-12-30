@@ -46,4 +46,4 @@ function copyRandomList1(head) {
 var tail2 = new randomNode([3, 1], null, center2);
 var center2 = new randomNode([2, 0], tail2, head2);
 var head2 = new randomNode([1, null], center2, null);
-console.log(copyRandomList(head2));
+console.log(copyRandomList1(head2));
