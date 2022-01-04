@@ -6,8 +6,8 @@ class SingleNode {
 }
 class SingleLink {
     constructor(data = null, next = null) {
-        // this.$head = new SingleNode(data, next);
-        this.$head = null;
+        this.$head = new SingleNode(data, next);
+        // this.$head = null;
     }
     find(value) {
         let node = this.head;
@@ -18,8 +18,18 @@ class SingleLink {
     }
     // 在node后面插入newNode
     insert(node, newNode) {
-        if (!node) { //node为null,即
+        if (!node) { //node不存在，则将newNode当头节点
+            newNode.next = this.$head;
+            this.$head = newNode;
         }
+        else {
+            newNode.next = node.next;
+            node.next = newNode;
+        }
+    }
+    remove(node, rmNode) {
+        // if(){
+        // }
     }
     get head() {
         return this.$head;
