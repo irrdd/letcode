@@ -16,6 +16,9 @@ function firstUniqChar(s: string): string {
     }
     return temp[0]
 
+
+    
+
 };
 function firstUniqChar1(s: string): string {
     if (!s.length) return ' '
