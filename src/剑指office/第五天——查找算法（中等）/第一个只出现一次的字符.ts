@@ -16,9 +16,6 @@ function firstUniqChar(s: string): string {
     }
     return temp[0]
 
-
-    
-
 };
 function firstUniqChar1(s: string): string {
     if (!s.length) return ' '
@@ -44,14 +41,13 @@ function firstUniqChar1(s: string): string {
 };
 // 队列
 function firstUniqChar2(s: string): string {
-    let map = new Map();
+    const map = new Map();
     let query = []
-    for(let [i, value] of Array.from(s).entries()){
-        console.log(i,value);
-        
+    for(let [i, value] of Array.from(s).entries()){        
         if (!map.has(value)){
-            map.set(value,1)
+            map.set(value,i)
             query.push([s[i],i])
+
         }else{
             map.set(value,-1)
             while(query.length && map.get(query[0][0]===-1)){
@@ -60,6 +56,8 @@ function firstUniqChar2(s: string): string {
 
         }
     }
+    console.log(query);
+    
     return query.length ? query[0][0]:' '
 
 };

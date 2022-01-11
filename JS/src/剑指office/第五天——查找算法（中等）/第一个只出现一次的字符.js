@@ -48,9 +48,8 @@ function firstUniqChar2(s) {
     let map = new Map();
     let query = [];
     for (let [i, value] of Array.from(s).entries()) {
-        console.log(i, value);
         if (!map.has(value)) {
-            map.set(value, 1);
+            map.set(value, i);
             query.push([s[i], i]);
         }
         else {
@@ -60,6 +59,7 @@ function firstUniqChar2(s) {
             }
         }
     }
+    console.log(query);
     return query.length ? query[0][0] : ' ';
 }
 ;
