@@ -58,6 +58,30 @@ function compressString2(S: string): string {
     }
     return str
 };
+// 单次循环
+function compressString3(S: string): string {
+    if(S.length<2) return S
+    let str='',i=0,temp=''
+    for (let index = 0; index < S.length; index++) {
+        if (temp===S[index]) {
+          i++
+        }else{
+          if (i===0) {
+          str = str+temp
+            
+          }else{
+            str = str+temp+i
+          }
+          
+          temp = S[index]
+          i=1
+        }
+        if (index === S.length-1) {
+          str=str+temp+i
+        }
+    }
+    return str.length>=S.length? S:str
+  };
 let s2 = "abbcccccaaa"
 
 console.log(compressString2(s2));
