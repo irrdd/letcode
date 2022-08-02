@@ -52,7 +52,7 @@ function oneEditAway1(first: string, second: string): boolean {
     return sum1 <= 1
 
 };
-function oneEditAway(first: string, second: string): boolean {
+function oneEditAway2(first: string, second: string): boolean {
     let max = first.length >= second.length ? first : second;
     let min = first.length >= second.length ? second : first;
     let tag = -1
