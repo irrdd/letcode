@@ -1,5 +1,5 @@
 import Link from "../../type/link";
-class SingleNode implements Link {
+export class SingleNode implements Link {
     public data: unknown
     public next: SingleNode
     constructor(data: unknown, next: SingleNode) {
@@ -9,11 +9,20 @@ class SingleNode implements Link {
 
 
 }
-class SingleLink {
-    private $head: SingleNode | null //头节点
-    constructor(data: unknown = null, next: SingleNode = null) {
-        this.$head = new SingleNode(data, next);
-        // this.$head = null;
+export class SingleLink {
+    private $head: SingleNode | null//头节点
+    private $pre : SingleNode| null //指针
+    constructor(arr:unknown[]| null) {
+        if(arr.length === 0 || !arr) this.$head = new SingleNode(null,null)
+        arr.forEach((value,index)=>{
+            if (index === 0) {
+                this.$head = new SingleNode(value,null)
+                this.$pre= this.$head
+            }
+             this.$pre.next  = new SingleNode(value,null)
+             this.$pre = this.$pre.next
+        })
+        
     }
     find(value: unknown): SingleNode {
         let node = this.head
@@ -36,7 +45,6 @@ class SingleLink {
         // if(){
 
         // }
-
     }
     get head() {
         return this.$head;
