@@ -1,7 +1,7 @@
 /*
  * @Author: 王东旭
  * @Date: 2022-08-06 22:38:53
- * @LastEditTime: 2022-08-15 22:18:00
+ * @LastEditTime: 2022-08-15 22:27:58
  * @LastEditors: 王东旭
  * @Description:
  * @FilePath: \letcode\src\程序员面试金典\10. 移除重复节点.ts
@@ -18,20 +18,20 @@
  *     }
  * }
  */
-import { SingleLink, SingleNode } from "../links/SingleLink";
+import { SingleLink, ListNode } from "../links/SingleLink";
 
 
-function removeDuplicateNodes(head: SingleNode | null): SingleNode | null {
+function removeDuplicateNodes(head: ListNode | null): ListNode | null {
    if(!head || !head.next) return head;
    let cur = head
    let pre = head
    const set = new Set()
   while(cur){
-    if (set.has(cur.data)) {
+    if (set.has(cur.val)) {
      pre.next = cur.next
      cur = cur.next 
     }else{
-      set.add(cur.data)
+      set.add(cur.val)
       pre = cur
       cur = cur.next
 

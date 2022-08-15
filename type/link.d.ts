@@ -1,5 +1,5 @@
 interface Link{
-    data:unknown
+    val:unknown
     next:Link
 }
 export default Link
