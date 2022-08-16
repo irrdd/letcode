@@ -93,21 +93,3 @@ export function partition3(head: ListNode | null, x: number): ListNode | null {
   samil.next = largeNode.next;
   return samilNode.next;
 }
-// 头插法
-export function partition4(head: ListNode | null, x: number): ListNode | null {
-  const temp = new ListNode(0,head)
-  let cur = head;
-  let pre = temp
-  while (cur) {
-    if(cur.val>=x){
-        pre = cur
-        cur = cur.next
-    }else{
-        pre.next = cur.next
-        cur.next = temp.next
-        temp.next = cur
-        cur = pre.next
-    }
-  }
-  return temp.next
-}
