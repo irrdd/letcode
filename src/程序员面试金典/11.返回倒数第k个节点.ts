@@ -1,16 +1,16 @@
 /*
  * @Author: 王东旭
  * @Date: 2022-08-15 22:21:46
- * @LastEditTime: 2022-08-15 23:17:03
+ * @LastEditTime: 2022-08-16 11:28:05
  * @LastEditors: 王东旭
  * @Description:
- * @FilePath: \letcode\src\程序员面试金典\11.返回倒数第k个节点.ts
+ * @FilePath: /letcode/src/程序员面试金典/11.返回倒数第k个节点.ts
  *
  */
 
 import { SingleLink, ListNode } from "../links/SingleLink";
 // 借助数组完成，空间复杂度高
-function kthToLast(head: ListNode | null, k: number): number {
+export function kthToLast(head: ListNode | null, k: number): number {
   const arr = [];
   let cur = head;
   while (cur) {
@@ -20,7 +20,7 @@ function kthToLast(head: ListNode | null, k: number): number {
   return arr[arr.length - k];
 }
 // 快慢指针法
-function kthToLast2(head: ListNode | null, k: number): number {
+export function kthToLast2(head: ListNode | null, k: number): number {
   let fast = head;
   let low = head;
   while (k--) {
