@@ -9,14 +9,16 @@
  *     }
  * }
  */
-  class ListNode {
-      val: number
-      next: ListNode | null
-      constructor(val?: number, next?: ListNode | null) {
-          this.val = (val===undefined ? 0 : val)
-          this.next = (next===undefined ? null : next)
-      }
-  }
+//   class ListNode {
+//       val: number
+//       next: ListNode | null
+//       constructor(val?: number, next?: ListNode | null) {
+//           this.val = (val===undefined ? 0 : val)
+//           this.next = (next===undefined ? null : next)
+//       }
+//   }
+
+import { ListNode } from "../../links/SingleLink";
  function reversePrint(head: ListNode | null): number[] {
     let arr = []
     let tag = head
@@ -40,8 +42,8 @@ function reversePrint1(head: ListNode | null): number[] {
     return arr
 };
 
-let tail = new ListNode(2)
-let center = new ListNode(3,tail)
-let head = new ListNode(1,center)
+// let tail = new ListNode(2)
+// let center = new ListNode(3,tail)
+// let head = new ListNode(1,center)
 
-console.log(reversePrint1(head));
+// console.log(reversePrint1(head));
