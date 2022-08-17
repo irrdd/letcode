@@ -1,8 +1,8 @@
 import Link from "../../type/link";
 export class ListNode implements Link {
-  public val: unknown;
+  public val: number;
   public next: ListNode;
-  constructor(val: unknown, next: ListNode) {
+  constructor(val: number, next: ListNode) {
     this.val = val;
     this.next = next;
   }
@@ -10,7 +10,7 @@ export class ListNode implements Link {
 export class SingleLink {
   private $head: ListNode | null; //头节点
   private $pre: ListNode | null; //指针
-  constructor(arr: unknown[] | null) {
+  constructor(arr: number[] | null) {
     if (arr.length === 0 || !arr) this.$head = null;
     arr.forEach((value, index) => {
       if (index === 0) {
@@ -22,7 +22,7 @@ export class SingleLink {
       }
     });
   }
-  find(value: unknown): ListNode {
+  find(value: number): ListNode {
     let node = this.head;
     while (node && node.val !== value) {
       node = node.next;
