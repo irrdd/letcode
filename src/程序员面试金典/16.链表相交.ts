@@ -1,7 +1,7 @@
 /*
  * @Author: 王东旭
  * @Date: 2022-08-17 10:47:33
- * @LastEditTime: 2022-08-17 15:37:35
+ * @LastEditTime: 2022-08-17 16:20:19
  * @LastEditors: 王东旭
  * @Description:
  * @FilePath: /letcode/src/程序员面试金典/16.链表相交.ts
@@ -38,6 +38,12 @@ export const getIntersectionNode2 = function (
   headB: ListNode
 ): ListNode | null {
    if(!headA || !headB) return null
-
+   let one = headA
+   let two = headB
+   while (one !== two) {
+     one = one ? one.next : headB
+     two = two ? two.next : headA
+   }
+   return one
 };
 
