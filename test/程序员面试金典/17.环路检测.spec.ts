@@ -1,15 +1,15 @@
 /*
  * @Author: 王东旭
  * @Date: 2022-08-17 14:28:55
- * @LastEditTime: 2022-08-17 15:30:43
+ * @LastEditTime: 2022-08-18 13:25:50
  * @LastEditors: 王东旭
  * @Description:
  * @FilePath: /letcode/test/程序员面试金典/17.环路检测.spec.ts
  *
  */
 
-import { detectCycle } from "../../src/程序员面试金典/17.环路检测";
-import { linkInArray  } from "../../src/util/linkUtil";
+import { detectCycle } from "#/17.环路检测";
+import { linkInArray  } from "@/util/linkUtil";
 
 describe("用Set辅助", () => {
 

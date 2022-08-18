@@ -1,14 +1,14 @@
 /*
  * @Author: 王东旭
  * @Date: 2022-08-16 20:32:43
- * @LastEditTime: 2022-08-16 22:08:58
+ * @LastEditTime: 2022-08-18 13:27:06
  * @LastEditors: 王东旭
  * @Description:
- * @FilePath: \letcode\src\程序员面试金典\14.链表求和.ts
+ * @FilePath: /letcode/src/程序员面试金典/14.链表求和.ts
  *
  */
 
-import { ListNode } from "../links/SingleLink";
+import { ListNode } from "@/links/SingleLink";
 export function addTwoNumbers(
   l1: ListNode | null,
   l2: ListNode | null

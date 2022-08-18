@@ -1,10 +1,10 @@
 /*
  * @Author: 王东旭
  * @Date: 2022-08-06 22:38:53
- * @LastEditTime: 2022-08-15 22:27:58
+ * @LastEditTime: 2022-08-18 13:27:31
  * @LastEditors: 王东旭
  * @Description:
- * @FilePath: \letcode\src\程序员面试金典\10. 移除重复节点.ts
+ * @FilePath: /letcode/src/程序员面试金典/10. 移除重复节点.ts
  *
  */
 /**
@@ -18,7 +18,7 @@
  *     }
  * }
  */
-import { SingleLink, ListNode } from "../links/SingleLink";
+import { SingleLink, ListNode } from "@/links/SingleLink";
 
 
 function removeDuplicateNodes(head: ListNode | null): ListNode | null {

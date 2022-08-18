@@ -1,13 +1,13 @@
 /*
  * @Author: 王东旭
  * @Date: 2022-08-17 10:47:33
- * @LastEditTime: 2022-08-17 16:20:19
+ * @LastEditTime: 2022-08-18 13:26:32
  * @LastEditors: 王东旭
  * @Description:
  * @FilePath: /letcode/src/程序员面试金典/16.链表相交.ts
  *
  */
-import ListNode from "../基本数据结构/单链表节点";
+import ListNode from "@/基本数据结构/单链表节点";
 // 借用Set进行辅助 ，空间复杂度 n 时间复杂度 n
 export const getIntersectionNode = function (
   headA: ListNode,

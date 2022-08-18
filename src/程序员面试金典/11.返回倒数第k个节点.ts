@@ -1,14 +1,14 @@
 /*
  * @Author: 王东旭
  * @Date: 2022-08-15 22:21:46
- * @LastEditTime: 2022-08-16 11:28:05
+ * @LastEditTime: 2022-08-18 13:27:24
  * @LastEditors: 王东旭
  * @Description:
  * @FilePath: /letcode/src/程序员面试金典/11.返回倒数第k个节点.ts
  *
  */
 
-import { SingleLink, ListNode } from "../links/SingleLink";
+import { SingleLink, ListNode } from "@/links/SingleLink";
 // 借助数组完成，空间复杂度高
 export function kthToLast(head: ListNode | null, k: number): number {
   const arr = [];

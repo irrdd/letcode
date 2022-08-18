@@ -1,16 +1,16 @@
 /*
  * @Author: 王东旭
  * @Date: 2022-08-16 20:33:08
- * @LastEditTime: 2022-08-16 22:03:04
+ * @LastEditTime: 2022-08-18 13:24:43
  * @LastEditors: 王东旭
  * @Description:
- * @FilePath: \letcode\test\程序员面试金典\14.链表求和.spec.ts
+ * @FilePath: /letcode/test/程序员面试金典/14.链表求和.spec.ts
  *
  */
 
-import { SingleLink } from "../../src/links/SingleLink";
-import { linkToArray } from "../../src/util/linkUtil";
-import { addTwoNumbers } from "../../src/程序员面试金典/14.链表求和";
+import { SingleLink } from "@/links/SingleLink";
+import { linkToArray } from "@/util/linkUtil";
+import { addTwoNumbers } from "#/14.链表求和";
 function run(arr1: number[], arr2: number[], fn = addTwoNumbers): number[] {
   const one = new SingleLink(arr1);
   const two = new SingleLink(arr2);

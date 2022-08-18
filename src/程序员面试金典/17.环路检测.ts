@@ -8,7 +8,7 @@
  *  
  */
 
-import ListNode from "../基本数据结构/单链表节点";
+import ListNode from "@/基本数据结构/单链表节点";
 
 /**
  * @param {ListNode} head

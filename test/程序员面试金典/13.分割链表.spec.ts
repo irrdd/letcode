@@ -1,19 +1,19 @@
 /*
  * @Author: 王东旭
  * @Date: 2022-08-16 13:57:26
- * @LastEditTime: 2022-08-16 20:31:37
+ * @LastEditTime: 2022-08-18 13:21:39
  * @LastEditors: 王东旭
  * @Description:
- * @FilePath: \letcode\test\程序员面试金典\13.分割链表.spec.ts
+ * @FilePath: /letcode/test/程序员面试金典/13.分割链表.spec.ts
  *
  */
 import {
   partition,
   partition2,
   partition3,
-} from "../../src/程序员面试金典/13.分割链表";
-import { SingleLink } from "../../src/links/SingleLink";
-import { linkToArray } from "../../src/util/linkUtil";
+} from "@/程序员面试金典/13.分割链表";
+import { SingleLink } from "@/links/SingleLink";
+import { linkToArray } from "@/util/linkUtil";
 
 function getArray(arr: number[], k: number, fn = partition) {
   const temp = new SingleLink(arr);

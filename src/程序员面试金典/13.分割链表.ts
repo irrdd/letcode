@@ -1,7 +1,7 @@
 /*
  * @Author: 王东旭
  * @Date: 2022-08-16 10:23:40
- * @LastEditTime: 2022-08-16 17:03:43
+ * @LastEditTime: 2022-08-18 13:27:14
  * @LastEditors: 王东旭
  * @Description:
  * @FilePath: /letcode/src/程序员面试金典/13.分割链表.ts
@@ -19,7 +19,7 @@
  * }
  */
 
-import { ListNode } from "../links/SingleLink";
+import { ListNode } from "@/links/SingleLink";
 
 // 借助两个数组完成
 export function partition(head: ListNode | null, x: number): ListNode | null {

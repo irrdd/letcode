@@ -1,7 +1,7 @@
 /*
  * @Author: 王东旭
  * @Date: 2022-08-16 11:22:06
- * @LastEditTime: 2022-08-16 13:55:11
+ * @LastEditTime: 2022-08-18 13:20:00
  * @LastEditors: 王东旭
  * @Description:
  * @FilePath: /letcode/test/程序员面试金典/11.返回倒数第k个节点.spec.ts
@@ -10,9 +10,9 @@
 import {
   kthToLast2,
   kthToLast,
-} from "../../src/程序员面试金典/11.返回倒数第k个节点";
+} from "@/程序员面试金典/11.返回倒数第k个节点";
 
-import { SingleLink } from "../../src/links/SingleLink";
+import { SingleLink } from "@/links/SingleLink";
 describe("返回倒数第k个节点", () => {
   test("借助数组", () => {
     const temp = new SingleLink([1, 2, 3, 4, 5]);

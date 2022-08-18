@@ -1,15 +1,15 @@
 /*
  * @Author: 王东旭
  * @Date: 2022-08-17 10:47:14
- * @LastEditTime: 2022-08-17 16:26:40
+ * @LastEditTime: 2022-08-18 13:25:23
  * @LastEditors: 王东旭
  * @Description:
  * @FilePath: /letcode/test/程序员面试金典/16.链表相交.spec.ts
  *
  */
 
-import { getIntersectionNode,getIntersectionNode2 } from "../../src/程序员面试金典/16.链表相交";
-import { linkInArray  } from "../../src/util/linkUtil";
+import { getIntersectionNode,getIntersectionNode2 } from "#/16.链表相交";
+import { linkInArray  } from "@/util/linkUtil";
 describe("借用Set进行辅助", () => {
 
   test("两链表等长，且相交", () => {
