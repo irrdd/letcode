@@ -1,16 +1,16 @@
 /*
  * @Author: 王东旭
  * @Date: 2022-08-17 09:48:27
- * @LastEditTime: 2022-08-17 10:15:09
+ * @LastEditTime: 2022-08-18 11:21:38
  * @LastEditors: 王东旭
  * @Description: 
  * @FilePath: /letcode/test/程序员面试金典/15.回文链表.spec.ts
  *  
  */
 
-import { SingleLink, ListNode } from "../../src/links/SingleLink";
-import { linkToArray } from "../../src/util/linkUtil";
-import {  isPalindrome} from "../../src/程序员面试金典/15.回文链表";
+import { SingleLink, ListNode } from "@/links/SingleLink";
+import { linkToArray } from "@/util/linkUtil";
+import {  isPalindrome} from "#/15.回文链表";
 
 function base(arr:number[],fn=isPalindrome):boolean{
     const temp = new SingleLink(arr)
