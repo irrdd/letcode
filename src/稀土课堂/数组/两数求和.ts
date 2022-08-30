@@ -1,10 +1,10 @@
 /*
  * @Author: 王东旭
  * @Date: 2022-08-23 10:22:16
- * @LastEditTime: 2022-08-23 10:57:59
+ * @LastEditTime: 2022-08-30 22:36:31
  * @LastEditors: 王东旭
  * @Description:  给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。
- * @FilePath: /letcode/src/稀土课堂/数组/两数求和.ts
+ * @FilePath: \letcode\src\稀土课堂\数组\两数求和.ts
  *  
  */
 // 双层循环
