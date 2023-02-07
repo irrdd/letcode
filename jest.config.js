@@ -91,7 +91,8 @@ module.exports = {
   moduleNameMapper: {
     "^@/(.*)$": "<rootDir>/src/$1",
     "^#/(.*)$": "<rootDir>/src/程序员面试金典/$1",
-    "^%/(.*)$": "<rootDir>/src/剑指office/$1"
+    "^%/(.*)$": "<rootDir>/src/剑指office/$1",
+    "^~/(.*)$": "<rootDir>/src/算法进阶/$1"
   },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
