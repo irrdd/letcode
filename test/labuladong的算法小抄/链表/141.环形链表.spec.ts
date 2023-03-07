@@ -1,4 +1,4 @@
-import { hasCycle } from "@/labuladong的算法小抄/链表/141. 环形链表";
+import { hasCycle } from "@/labuladong的算法小抄/链表/141.环形链表";
 import { creatCirleLink } from "@/util/linkUtil";
 
 describe("判断是否是循环列表", () => {
