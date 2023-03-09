@@ -1,7 +1,7 @@
 
 import { ListNode, SingleLink } from "@/links/SingleLink";
 import { removeNthFromEnd } from '@/labuladong的算法小抄/链表/19.删除链表的倒数第 N 个结点'
-import { linkInArray, linkToArray } from "@/util/linkUtil";
+import {  linkToArray } from "@/util/linkUtil";
 
 
 const util = ({ arr, pos }: { arr: number[], pos: number }) => {
