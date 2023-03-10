@@ -53,14 +53,11 @@ test("树形对象转真正的二叉树", () => {
     },
   };
   const tree = obj2Tree(root);
-  console.log(tree);
 });
 
 test("先序遍历树", () => {
   const tree = creatTree();
   const arr = preOrder(tree);
-  console.log("先序遍历", arr);
-
   expect(arr).toEqual(["A", "B", "D", "E", "C", "F"]);
 });
 

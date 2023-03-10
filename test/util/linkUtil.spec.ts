@@ -18,9 +18,5 @@ describe('链表转数组',()=>{
 describe('生成循环链表',()=>{
     test('链表转数组', () => {
        const head = creatCirleLink([2,3,4,6,8],2)
-
-       console.log(head);
-       
-       
     })
 })
