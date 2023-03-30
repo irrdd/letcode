@@ -1,4 +1,4 @@
-import { ListNode } from "@/links/SingleLink";
+import { ListNode } from "@/基本数据结构/SingleLink";
 export function hasCycle(head: ListNode | null): boolean {
   if (!head || !head.next) return false;
   let first = head;

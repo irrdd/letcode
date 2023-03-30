@@ -8,7 +8,7 @@
  *
  */
 
-import { ListNode } from "@/links/SingleLink";
+import { ListNode } from "@/基本数据结构/SingleLink";
 export const unqit = (link: ListNode): ListNode => {
   if(!link.next) return link
   let temp = new ListNode(0, link);

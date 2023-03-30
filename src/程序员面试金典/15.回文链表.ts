@@ -8,7 +8,7 @@
  * @FilePath: /letcode/src/程序员面试金典/15.回文链表.ts
  *  
  */
-import { ListNode } from "@/links/SingleLink";
+import { ListNode } from "@/基本数据结构/SingleLink";
 export function isPalindrome(head: ListNode | null): boolean {
     if(!head) return true
     const arr:number[] = []

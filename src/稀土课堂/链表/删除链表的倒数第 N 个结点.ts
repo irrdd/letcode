@@ -8,7 +8,7 @@
  * @FilePath: \letcode\src\稀土课堂\链表\删除链表的倒数第 N 个结点.ts
  *  
  */
-import { ListNode } from "@/links/SingleLink";
+import { ListNode } from "@/基本数据结构/SingleLink";
 // 快慢指针法
 export function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
     if(!head) return head

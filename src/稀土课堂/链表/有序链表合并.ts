@@ -8,7 +8,7 @@
  * @FilePath: \letcode\src\稀土课堂\链表\有序链表合并.ts
  *  
  */
-import { ListNode } from "@/links/SingleLink";
+import { ListNode } from "@/基本数据结构/SingleLink";
 export function mergeTwoLists(list1: ListNode | null, list2: ListNode | null): ListNode | null {
   if(!list1) return list2
   if(!list2) return list1

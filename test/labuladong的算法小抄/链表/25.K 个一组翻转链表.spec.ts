@@ -1,4 +1,4 @@
-import { ListNode, SingleLink } from "@/links/SingleLink";
+import { ListNode, SingleLink } from "@/基本数据结构/SingleLink";
 import { reverseKGroup,reverseKGroup2 } from '@/labuladong的算法小抄/链表/25.K 个一组翻转链表'
 import { linkToArray } from "@/util/linkUtil";
 

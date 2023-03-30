@@ -18,7 +18,7 @@
 //       }
 //   }
 
-import { ListNode } from "../../links/SingleLink";
+import { ListNode } from "../../基本数据结构/SingleLink";
  function reversePrint(head: ListNode | null): number[] {
     let arr = []
     let tag = head

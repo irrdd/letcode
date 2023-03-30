@@ -6,6 +6,8 @@
  * 当且仅当你可以在所有给定的行程中接送所有乘客时，返回 true，否则请返回 false。
  */
 
+import { DiffArr } from "@/基本数据结构/diffArr"
+
 export function carPooling(trips: number[][], capacity: number): boolean {
     const arr:number[] = []
     for (let index = 0; index < trips.length; index++) {
@@ -16,6 +18,20 @@ export function carPooling(trips: number[][], capacity: number): boolean {
             arr[j] =one  +  two
             if(arr[j]> capacity) return false 
        }
+    }
+    return true
+};
+// 差分数组
+export function carPooling2(trips: number[][], capacity: number): boolean {
+    const arr:number[] = new Array(1001).fill(0)
+    const diff = new DiffArr(arr)
+    for (let index = 0; index < trips.length; index++) {
+       if(capacity < trips[index][0]) return false 
+       diff.increment(trips[index][1],trips[index][2] - 1,trips[index][0])
+    }
+    const res = diff.result
+    for (const value of res) {
+       if(value > capacity) return false 
     }
     return true
 };

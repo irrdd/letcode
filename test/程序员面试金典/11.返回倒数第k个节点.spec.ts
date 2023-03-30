@@ -12,7 +12,7 @@ import {
   kthToLast,
 } from "@/程序员面试金典/11.返回倒数第k个节点";
 
-import { SingleLink } from "@/links/SingleLink";
+import { SingleLink } from "@/基本数据结构/SingleLink";
 describe("返回倒数第k个节点", () => {
   test("借助数组", () => {
     const temp = new SingleLink([1, 2, 3, 4, 5]);

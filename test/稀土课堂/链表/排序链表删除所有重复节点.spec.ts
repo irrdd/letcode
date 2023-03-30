@@ -13,7 +13,7 @@
  *
  */
 
-import { ListNode, SingleLink } from "@/links/SingleLink";
+import { ListNode, SingleLink } from "@/基本数据结构/SingleLink";
 import { linkToArray } from "@/util/linkUtil";
 import { unqit  } from '@/稀土课堂/链表/排序链表删除所有重复节点';
 

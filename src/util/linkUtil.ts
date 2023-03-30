@@ -7,7 +7,7 @@
  * @FilePath: /letcode/src/util/linkUtil.ts
  *
  */
-import { ListNode } from "../links/SingleLink";
+import { ListNode } from "../基本数据结构/SingleLink";
 /**
  * @description: 将链表转换成数组，方便查看
  * @param {ListNode} link 传入的链表

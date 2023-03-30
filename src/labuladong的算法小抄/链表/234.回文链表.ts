@@ -1,4 +1,4 @@
-import { ListNode } from "@/links/SingleLink";
+import { ListNode } from "@/基本数据结构/SingleLink";
 import { reverseList } from "@/labuladong的算法小抄/链表/206.反转链表";
 
 export function isPalindrome(head: ListNode | null): boolean {

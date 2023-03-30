@@ -19,7 +19,7 @@
  * }
  */
 
-import { ListNode } from "@/links/SingleLink";
+import { ListNode } from "@/基本数据结构/SingleLink";
 
 // 借助两个数组完成
 export function partition(head: ListNode | null, x: number): ListNode | null {

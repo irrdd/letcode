@@ -1,4 +1,4 @@
-import { ListNode, SingleLink } from "@/links/SingleLink";
+import { ListNode, SingleLink } from "@/基本数据结构/SingleLink";
 import { isPalindrome } from '@/labuladong的算法小抄/链表/234.回文链表'
 import { linkToArray } from "@/util/linkUtil";
 

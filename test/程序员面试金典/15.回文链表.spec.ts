@@ -8,7 +8,7 @@
  *  
  */
 
-import { SingleLink, ListNode } from "@/links/SingleLink";
+import { SingleLink, ListNode } from "@/基本数据结构/SingleLink";
 import {  isPalindrome} from "#/15.回文链表";
 
 function base(arr:number[],fn=isPalindrome):boolean{

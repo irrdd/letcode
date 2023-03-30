@@ -8,7 +8,7 @@
  *
  */
 
-import { ListNode, SingleLink } from "@/links/SingleLink";
+import { ListNode, SingleLink } from "@/基本数据结构/SingleLink";
 import { linkToArray } from "@/util/linkUtil";
 import { uniqtLink } from "@/稀土课堂/链表/有序链表删除重复节点";
 

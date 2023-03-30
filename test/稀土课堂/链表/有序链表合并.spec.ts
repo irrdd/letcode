@@ -9,7 +9,7 @@
  */
 
 import { mergeTwoLists } from "@/稀土课堂/链表/有序链表合并";
-import { ListNode, SingleLink } from "@/links/SingleLink";
+import { ListNode, SingleLink } from "@/基本数据结构/SingleLink";
 import { linkToArray } from "@/util/linkUtil";
 
 describe("顺序遍历法", () => {

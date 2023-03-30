@@ -1,4 +1,4 @@
-import { ListNode, SingleLink } from "@/links/SingleLink";
+import { ListNode, SingleLink } from "@/基本数据结构/SingleLink";
 import { middleNode } from '@/labuladong的算法小抄/链表/876.链表的中间结点'
 import { linkToArray } from "@/util/linkUtil";
 

@@ -8,7 +8,7 @@
  *
  */
 
-import { SingleLink, ListNode } from "@/links/SingleLink";
+import { SingleLink, ListNode } from "@/基本数据结构/SingleLink";
 // 借助数组完成，空间复杂度高
 export function kthToLast(head: ListNode | null, k: number): number {
   const arr = [];
@@ -33,4 +33,3 @@ export function kthToLast2(head: ListNode | null, k: number): number {
   return low.val as number;
 }
 const temp = new SingleLink([1, 2, 3,4,5]);
-console.log(kthToLast2(temp.head, 2));

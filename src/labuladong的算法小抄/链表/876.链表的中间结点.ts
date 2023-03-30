@@ -1,4 +1,4 @@
-import { ListNode } from "@/links/SingleLink";
+import { ListNode } from "@/基本数据结构/SingleLink";
 
 export function middleNode(head: ListNode | null): ListNode | null {
     if(!head || !head.next) return head

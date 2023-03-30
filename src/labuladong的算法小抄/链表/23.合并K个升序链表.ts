@@ -1,4 +1,4 @@
-import { ListNode } from "@/links/SingleLink";
+import { ListNode } from "@/基本数据结构/SingleLink";
 import { mergeTwoLists } from '@/labuladong的算法小抄/链表/21.合并两个有序链表'    
 
 export function mergeKLists(lists: Array<ListNode | null>): ListNode | null {

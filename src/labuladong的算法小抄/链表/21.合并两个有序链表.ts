@@ -1,4 +1,4 @@
-import { ListNode } from "@/links/SingleLink";
+import { ListNode } from "@/基本数据结构/SingleLink";
 
 export function mergeTwoLists(list1: ListNode | null, list2: ListNode | null): ListNode | null {
     if (!list1) return list2

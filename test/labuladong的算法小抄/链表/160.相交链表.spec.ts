@@ -1,5 +1,5 @@
 import { getIntersectionNode2 as  getIntersectionNode} from "@/labuladong的算法小抄/链表/160.相交链表";
-import { ListNode, SingleLink } from "@/links/SingleLink";
+import { ListNode, SingleLink } from "@/基本数据结构/SingleLink";
 import { linkInArray } from "@/util/linkUtil";
 
 

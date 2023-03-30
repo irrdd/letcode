@@ -1,4 +1,4 @@
-import { ListNode, SingleLink } from "@/links/SingleLink";
+import { ListNode, SingleLink } from "@/基本数据结构/SingleLink";
 import { reverseBetween,reverseBetween2 } from '@/labuladong的算法小抄/链表/92.反转链表2'
 import { linkToArray } from "@/util/linkUtil";
 

@@ -1,4 +1,4 @@
-import { ListNode } from "@/links/SingleLink";
+import { ListNode } from "@/基本数据结构/SingleLink";
 import { reverseList } from "@/labuladong的算法小抄/链表/206.反转链表";
 import { reverseN } from '@/labuladong的算法小抄/链表/反转链表前N个节点'
 export function reverseKGroup(head: ListNode | null, k: number): ListNode | null {

@@ -12,7 +12,7 @@ import {
   partition2,
   partition3,
 } from "@/程序员面试金典/13.分割链表";
-import { SingleLink } from "@/links/SingleLink";
+import { SingleLink } from "@/基本数据结构/SingleLink";
 import { linkToArray } from "@/util/linkUtil";
 
 function getArray(arr: number[], k: number, fn = partition) {

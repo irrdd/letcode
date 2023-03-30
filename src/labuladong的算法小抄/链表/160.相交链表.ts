@@ -1,4 +1,4 @@
-import { ListNode } from "@/links/SingleLink";
+import { ListNode } from "@/基本数据结构/SingleLink";
 import { detectCycle } from './142.环形链表2'
 
 export function getIntersectionNode(headA: ListNode | null, headB: ListNode | null): ListNode | null {

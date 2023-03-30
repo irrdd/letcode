@@ -7,7 +7,7 @@
  * @FilePath: \letcode\src\稀土课堂\链表\反转链表.ts
  *
  */
-import { ListNode } from "@/links/SingleLink";
+import { ListNode } from "@/基本数据结构/SingleLink";
 
 //迭代
 export function reverseList(head: ListNode | null): ListNode | null {

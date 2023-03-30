@@ -1,5 +1,5 @@
 
-import { SingleLink } from "../../src/links/SingleLink";
+import { SingleLink } from "../../src/基本数据结构/SingleLink";
 import { linkToArray, creatCirleLink } from "../../src/util/linkUtil";
 
 describe('链表转数组',()=>{

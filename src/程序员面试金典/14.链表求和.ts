@@ -8,7 +8,7 @@
  *
  */
 
-import { ListNode } from "@/links/SingleLink";
+import { ListNode } from "@/基本数据结构/SingleLink";
 export function addTwoNumbers(
   l1: ListNode | null,
   l2: ListNode | null

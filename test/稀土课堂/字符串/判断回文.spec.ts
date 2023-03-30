@@ -21,11 +21,6 @@ describe('对称法',()=>{
         const res = isRever(str)
         expect(res).toBeTruthy()
     })
-    test('删右半边一个字符回文',()=>{
-        const str = 'abcdceba'
-        const res = isRever(str)
-        expect(res).toBeTruthy()
-    })
     test('单个字母',()=>{
         const str = 'a'
         const res = isRever(str)

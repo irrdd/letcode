@@ -1,5 +1,5 @@
 
-import { ListNode } from "@/links/SingleLink";
+import { ListNode } from "@/基本数据结构/SingleLink";
 
 let tail = null
 

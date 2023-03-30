@@ -1,5 +1,5 @@
 
-import { ListNode } from "@/links/SingleLink";
+import { ListNode } from "@/基本数据结构/SingleLink";
 export function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
     if(!head.next && n===1) return null
     let num = n

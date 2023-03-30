@@ -8,7 +8,7 @@
  *
  */
 
-import { SingleLink } from "@/links/SingleLink";
+import { SingleLink } from "@/基本数据结构/SingleLink";
 import { linkToArray } from "@/util/linkUtil";
 import { addTwoNumbers } from "#/14.链表求和";
 function run(arr1: number[], arr2: number[], fn = addTwoNumbers): number[] {

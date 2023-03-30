@@ -1,5 +1,5 @@
 
-import { ListNode, SingleLink } from "@/links/SingleLink";
+import { ListNode, SingleLink } from "@/基本数据结构/SingleLink";
 import { removeNthFromEnd } from '@/labuladong的算法小抄/链表/19.删除链表的倒数第 N 个结点'
 import {  linkToArray } from "@/util/linkUtil";
 

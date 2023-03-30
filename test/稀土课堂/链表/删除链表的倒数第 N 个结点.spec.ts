@@ -8,7 +8,7 @@
  *
  */
 
-import { ListNode, SingleLink } from "@/links/SingleLink";
+import { ListNode, SingleLink } from "@/基本数据结构/SingleLink";
 import { linkToArray } from "@/util/linkUtil";
 import { removeNthFromEnd } from "@/稀土课堂/链表/删除链表的倒数第 N 个结点";
 

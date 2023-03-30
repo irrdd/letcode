@@ -18,7 +18,7 @@
  *     }
  * }
  */
-import { SingleLink, ListNode } from "@/links/SingleLink";
+import { SingleLink, ListNode } from "@/基本数据结构/SingleLink";
 
 
 function removeDuplicateNodes(head: ListNode | null): ListNode | null {

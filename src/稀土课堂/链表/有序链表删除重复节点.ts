@@ -7,7 +7,7 @@
  * @FilePath: \letcode\src\稀土课堂\链表\有序链表删除重复节点.ts
  *  
  */
-import { ListNode } from "@/links/SingleLink";
+import { ListNode } from "@/基本数据结构/SingleLink";
 export const uniqtLink = (link:ListNode | null):ListNode | null => {
    if(!link)  return link
    let cur = link
