@@ -20,23 +20,23 @@ class MinStack {
     }
 
     push(x: number): void {
-        this._stack[this.$top]=x
+        this._stack[this.$top] = x
         this.$top++
     }
 
     pop(): void {
-        if (this.$top<=0) {
+        if (this.$top <= 0) {
             return
         }
         this.$top--
     }
 
     top(): number {
-        return this._stack[this.$top-1]
+        return this._stack[this.$top - 1]
     }
 
     min(): number {
-        if (this.$top<=0) {
+        if (this.$top <= 0) {
             return
         }
         let tag: number = this.top()
@@ -58,7 +58,7 @@ class MinStack1 {
     }
 
     push(x: number): void {
-       this._stack.push(x);
+        this._stack.push(x);
     }
 
     pop(): void {
@@ -66,20 +66,20 @@ class MinStack1 {
     }
 
     top(): number {
-        return this._stack[this._stack.length-1]
+        return this._stack[this._stack.length - 1]
     }
 
     min(): number {
-      return  Math.min(...this._stack)
+        return Math.min(...this._stack)
     }
 }
 let minStack = new MinStack1();
 minStack.push(-2);
 minStack.push(0);
 minStack.push(-3);
-console.log( minStack.min());
-console.log( minStack.top());
+console.log(minStack.min());
+console.log(minStack.top());
 minStack.pop();
-console.log( minStack.top());
-console.log( minStack.min());
+console.log(minStack.top());
+console.log(minStack.min());
 
