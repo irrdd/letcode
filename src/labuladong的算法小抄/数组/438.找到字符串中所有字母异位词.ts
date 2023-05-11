@@ -18,7 +18,7 @@ export function findAnagrams(s: string, p: string): number[] {
             if (!mapS.has(s[right])) {
                 mapS.set(s[right], 1)
             } else {
-                mapS.set(s[right], mapS.get(s[right] + 1))
+                mapS.set(s[right], mapS.get(s[right])+ 1)
             }
             right++;
         }
