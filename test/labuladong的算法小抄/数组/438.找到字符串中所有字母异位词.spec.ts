@@ -1,4 +1,4 @@
-import { findAnagrams } from '@/labuladong的算法小抄/数组/438.找到字符串中所有字母异位词'
+import { findAnagrams1 as findAnagrams } from '@/labuladong的算法小抄/数组/438.找到字符串中所有字母异位词'
 
 describe("Problem 438: Find All Anagrams in a String", () => {
     it("Find all anagrams in a string with non-empty s and p", () => {

@@ -1,3 +1,4 @@
+// 使用Map
 export function findAnagrams(s: string, p: string): number[] {
     if (!s.length || !p.length || s.length < p.length) return []
     const mapP = new Map()
@@ -18,7 +19,7 @@ export function findAnagrams(s: string, p: string): number[] {
             if (!mapS.has(s[right])) {
                 mapS.set(s[right], 1)
             } else {
-                mapS.set(s[right], mapS.get(s[right])+ 1)
+                mapS.set(s[right], mapS.get(s[right]) + 1)
             }
             right++;
         }
@@ -42,4 +43,38 @@ export function findAnagrams(s: string, p: string): number[] {
     }
     return res
 
+}
+// 使用数组
+
+export function findAnagrams1(s: string, p: string): number[] {
+    if (!s.length || !p.length || s.length < p.length) return []
+    const arrP = new Array(26).fill(0)
+    const arrS = new Array(26).fill(0)
+    const res: number[] = []
+    for (let index = 0; index < p.length; index++) {
+        arrP[p.charCodeAt(index) - 97]++
+
+    }
+    let left = 0
+    let right = 0
+    while (right < s.length) {
+        if (right - left < p.length) {
+            arrS[s.charCodeAt(right)-97]++
+            right++
+        }
+        if (right - left === p.length) {
+            let temp = true;
+            for (let index = 0; index < arrP.length; index++) {
+                if (arrP[index] !== arrS[index]) {
+                    temp = false
+                    break;
+                }
+            }
+            temp && res.push(left)
+            arrS[s.charCodeAt(left)-97]--
+            left++
+        }
+    }
+
+    return res
 }
